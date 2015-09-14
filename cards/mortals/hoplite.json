@@ -1,0 +1,18 @@
+{
+  "category": "mortal",
+  "name": "Hoplight",
+  "genus": "infantry",
+  "cost": 1,
+  "health": 2,
+  "attack": {
+    "normal": 1
+  },
+  "picture": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Two_hoplites.jpg",
+  "artist": "US Government",
+  "special": [
+    "tough"
+  ],
+  "attribution": [
+    "pd"
+  ]
+}
