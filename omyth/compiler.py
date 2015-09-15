@@ -9,8 +9,9 @@ class Compiler(cli.Application):
     def main(self, *filenames):
         for file in filenames:
             ucard = UnitCard(file)
-            print(ucard)
-            
+            file = local.path(file)
+            ucard.save((local.cwd / file.basename).with_suffix('.pdf'))
+
 
 if __name__ == '__main__':
     Compiler.run()

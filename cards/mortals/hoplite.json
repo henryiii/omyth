@@ -5,6 +5,7 @@
   "cost": 1,
   "health": 2,
   "attack": 1,
+  "attack_class": "pierce",
   "armor":{
     "slash": 1
   },
