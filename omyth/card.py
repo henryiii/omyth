@@ -38,23 +38,24 @@ class BaseCard(object):
 
             setattr(self, attrib, value)
 
-    def to_latex
-
     def __str__(self):
         vals = ('{0}: {1}'.format(value, getattr(self,value)) for value in self.__dict__)
         return '\n'.join(vals)
 
 class UnitCard(BaseCard):
-    category = 'mortal, myth, hero'.split(', ')
+    category = 'mortal myth hero'.split()
     name = None
-    genus = 'infantry, archer, calvary, monster, winged, animal'.split(', ')
+    genus = 'infantry archer calvary monster winged animal'.split()
     cost = 0
     health = 0
-    attack = dict(normal=0, hero=0, myth=0, mortal=0, player=0)
+    attack = 0
+    hero_attack = 1
+    armor = dict(slash=0, pierce=0, ranged=0, crush=0, power=0)
     picture = None
     artist = None
-    special = 'tough, stone, defenseless, massive, companion'.split(', ')
-    attribution = 'pd, cc'.split(', ')
+    special = 'tough stone defenseless ranged unstoppable companion  \
+               attractive companion quick mounted'.split()
+    attribution = 'pd cc'.split()
     discription = None
 
 class PowerCard(BaseCard):

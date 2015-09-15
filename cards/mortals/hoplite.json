@@ -4,8 +4,9 @@
   "genus": "infantry",
   "cost": 1,
   "health": 2,
-  "attack": {
-    "normal": 1
+  "attack": 1,
+  "armor":{
+    "slash": 1
   },
   "picture": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Two_hoplites.jpg",
   "artist": "US Government",
